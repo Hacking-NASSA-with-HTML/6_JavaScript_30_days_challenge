@@ -20,7 +20,7 @@ let findMatches = function (wordToMatch, cities) {
 const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
 
-// With vanilaJS
+// With vanillaJS
 // function displayMatches() {
 //     const matchArray = findMatches(this.value, cities);
 //     const html = matchArray.map(place => {
