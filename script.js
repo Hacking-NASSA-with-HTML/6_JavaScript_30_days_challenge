@@ -13,9 +13,12 @@ function findMatches(wordToMatch, cities) {
     });
 }
 
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+// function numberWithCommas(x) {
+//     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+// }
+// With arrow function
+const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
 
 function displayMatches() {
     const matchArray = findMatches(this.value, cities);
