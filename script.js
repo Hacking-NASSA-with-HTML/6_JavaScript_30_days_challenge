@@ -13,6 +13,10 @@ let findMatches = function (wordToMatch, cities) {
     });
 }
 
+
+// Code to divide numbers like 10000 to 10,000 with coma
+
+// With vanillaJS
 // function numberWithCommas(x) {
 //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 // }
