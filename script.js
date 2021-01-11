@@ -45,9 +45,13 @@ let displayMatches = function () {
 
     // This code displaying all fetched data to HTML:
     const html = matchArray.map(place => {
+
+        // code to pluck and replace ordinary characters with color of the highlighted class "hl".
         const regex = new RegExp(this.value, 'gi');
         const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
         const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
+        // the end of code for highlighting with "hl" class.
+
         return `
             <li>
             <span class="name">${cityName}, ${stateName}</span>
